@@ -1,0 +1,247 @@
+.wrapper{
+    padding:25px 60px;
+    background: #F7F6F2 ;
+}
+.page-title{
+    padding:10px 0;
+    font-size: 18px ;
+    font-weight: 600;
+    border-bottom:1px solid #d8d88d;
+}
+
+.income-part{
+    background: #fff;
+    border-radius: 8px;
+    margin: 20px 0 30px;
+    justify-content: space-around;
+    padding:30px 0;
+    font-size:16px;
+    text-align: center;
+    .el-icon-question{
+        cursor: pointer;
+        &:hover{
+            color:$base-color;
+        }
+    }
+    .income-money{
+        font-size: 24px;
+        color:$base-color;
+        margin-top:15px;
+    }
+    button{
+        width:104px;
+        height: 34px;
+        margin-top:15px;
+        &.custom-button-default{
+            background: #fafafa;
+        }
+    } 
+}
+.filter-title{ 
+    &>span{
+        margin-right: 10px;
+        font-size: 18px ;
+        font-weight: 600;
+    }
+    .custom-button-default{
+        width:130px; 
+    }
+}
+.date-filter{
+    margin-top:10px;
+    margin-bottom:20px;
+    button{
+        width:66px;
+    }
+}
+// .income-filter{
+//     border-top: 1px dotted #d8d88d;
+//     padding:20px 0 25px; 
+// }
+.order-count,.income-filter{
+    border-top: 1px dotted #d8d88d;
+    padding:20px 0 25px; 
+    .tab-bar{
+        padding:20px 0 10px;
+        text-align: center;
+        &.chart{
+            background: #fff;
+            padding-left:60px;
+        }
+        span{
+            width:104px;
+            line-height: 34px;
+            background: #f9f9f9;
+            cursor: pointer;
+            &.active{
+                background: $base-color;
+                color:#fff;
+            }
+        }
+    }
+}
+
+.pagination{
+    background: #FAFAFA;
+    padding:6px;
+    text-align: right;
+}
+.modal{
+    @include posFixed(100%,100vh,0,0);
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
+}
+// 
+
+.charts{
+    width:100%;
+    height: 400px;
+    background: #fff;
+}
+// 结算详情
+.settle-accounts-detail{
+    padding: 20px ;
+    box-sizing: border-box;
+    background: #fff;
+    @include posFixed(600px,auto,calc((100% - 600px) / 2),20%);
+    z-index: 11;
+    .btns{
+        margin-top:20px;
+        text-align: center;
+    }
+    button{
+        width:150px;
+    }
+}
+// 未接入提示
+.notice-client{ 
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    @include posFixed(410px,auto,calc((100% - 410px) / 2),20%);
+    line-height: 1.6;
+    h3{
+        color:$base-color;
+        font-size: 14px;
+    }
+    z-index: 11;
+}
+
+// 完善财务信息提示
+.fill-finance{
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    @include posFixed(416px,auto,calc((100% - 416px) / 2),20%);
+    line-height: 1.6;
+    h3{
+        color:$base-color;
+        font-size: 14px;
+    }
+    .btns{
+        justify-content: space-between;
+        margin-top:40px;
+        button{
+            width:150px;
+        }
+    } 
+    z-index: 11;
+}
+
+// 提现须知
+.drawcash-notice{
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    @include posFixed(600px,auto,calc((100% - 600px) / 2),20%);
+    z-index:11;
+    .drawcash-notice-info{
+        height: 50vh;
+        overflow-y: scroll;
+    }
+    p{
+        color:#333;
+        line-height: 21px;
+        span{
+            color:$base-color;
+            font-weight: bold;
+        }
+    }
+    .btns{
+        margin-top:30px;
+        justify-content: space-around;
+        button{
+            width:150px;
+        }
+    }
+}
+// 提现信息确认
+.confirm-drawcash{
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    @include posFixed(600px,auto,calc((100% - 600px) / 2),20%);
+    z-index:11;
+    h3{
+        text-align: center;
+        font-size: 16px;
+        margin-bottom:20px;
+    }
+    p{
+        line-height: 21px;
+    }
+    .btns{
+        margin-top:30px;
+        justify-content: space-around;
+        button{
+            width:150px;
+        }
+    }
+}
+// 提交信息成功
+.drawcash-success{
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    @include posFixed(600px,auto,calc((100% - 600px) / 2),20%);
+    z-index:11;
+    .drawcash-success-info{
+        height: 30vh;
+        overflow-y: scroll;
+    }
+    .success-icon{
+        text-align: center;
+        img{
+            width:64px;
+            margin-bottom: 10px;
+        }
+    }
+    h3{
+        font-size:16px;
+        margin-bottom: 20px;
+    }
+    p{
+        color:#333;
+        line-height: 21px;
+        span{
+            color:$base-color;
+            font-weight: bold;
+        }
+    }
+    .btns{ 
+        width:150px;
+        margin: 0 auto;
+        margin-top:30px;
+    }
+}
+
+// 提现记录
+.drawcash-record{
+    .download{
+        cursor: pointer;
+        &:hover{
+            color:$base-color;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,9 @@
+$base-color:#EA6C34;
+
+@mixin posFixed($width,$height,$left,$top){
+    position: fixed;
+    width:$width;
+    height:$height;
+    left:$left;
+    top:$top;
+}

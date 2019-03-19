@@ -1,0 +1,122 @@
+.wrapper{
+    padding:25px 60px;
+    background: #F7F6F2 ;
+}
+.page-title{
+    padding:10px 0;
+    font-size: 18px ;
+    font-weight: 600;
+    border-bottom:1px solid #d8d88d;
+}
+.tab-bar{
+    margin:10px 0 20px;
+    text-align: center;
+    span{
+        width:104px;
+        line-height: 34px;
+        background: #f9f9f9;
+        cursor: pointer; 
+        &.active{
+            background: $base-color;
+            color:#fff;
+        }
+    }
+}
+.base-info{
+    width:50%;
+    .el-form-item__label{
+        color:#111;
+    }
+    .handle-btns{
+        justify-content: center;
+        button{
+            width:104px;
+            height: 34px;
+            &.custom-button-default{
+                margin-left:10px;
+                border: 1px solid #ddd;
+            }
+        }
+    }
+}
+
+.modal{
+    @include posFixed(100%,100vh,0,0);
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
+}
+.confirm-info{
+    @include posFixed(410px,auto,calc((100% - 410px) / 2),30%);
+    text-align: center;
+    padding :30px 40px;
+    box-sizing: border-box;
+    background: #fff;
+    z-index:11;
+    .title{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .desc{
+        text-align: left;
+        margin:20px 0;
+    }
+    button{
+        width:150px;
+        height:34px;
+    }
+}
+
+.finance-info{
+    width:70%;
+    .code{ 
+        position: relative;
+        width:300px;
+        span{
+            position: absolute;
+            width:100px;
+            top:0;
+            right:-25px;
+            font-size: 12px;
+            color:$base-color;
+            cursor: pointer; 
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    .custom-button-primary{
+        width:104px;
+        height: 34px;
+    }
+}
+
+/*上传图片*/
+.upload-pic{
+    position: relative;
+    text-align: left;
+    img{
+        width:80px;
+        height:80px;
+    }
+    input{
+        width:80px;
+        height: 80px;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .preview-pic{
+        margin-left:20px;
+        position: relative;
+        i{
+            position: absolute;
+            font-size: 20px;
+            background: #fff;
+            color:#444;
+            border-radius: 50%;
+            top:-10px;
+            right:-10px;
+            cursor: pointer;
+        }
+    }
+}
